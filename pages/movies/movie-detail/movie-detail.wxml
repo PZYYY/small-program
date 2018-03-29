@@ -1,0 +1,47 @@
+<import src="../stars-template/stars-template.wxml" />
+<view>
+  <!--头部图片部分  -->
+  <view class="top">
+    <image src="/images/img1.jpg" class="top-img"></image> 
+    <view class="top-text">
+      <text class="film-name">{{movieDetailData.original_title}}</text>
+      <text class="film-address-time">上映地点 · <text>时间</text></text>
+      <view class="film_like-comment">
+        <text class="film_like">XX<text class="film-comment">喜欢</text></text>
+        <text>XX<text class="film-comment">条评论</text></text>
+      </view>
+    </view>
+    <image src="/images/pic1.jpg" class="film-img"></image>
+  </view>
+  <!--/头部图片部分  -->
+
+  <!-- 中间详细信息部分 -->
+  <view class="middle">
+    <text class="middle-filmname">电影名称</text>
+    <view class="middle-score">
+      <text>评分</text>
+      <template is="starsTemplate" />
+    </view>
+    <text>导演 <text></text></text>
+    <text>影人 <text></text></text>
+    <text>类型 <text></text></text>
+  </view>
+  <view class="line"></view>
+  <!-- /中间详细信息部分 -->
+
+  <!--剧情简介部分  -->
+  <view class="summary">
+    <text>剧情简介</text>
+    <text class="summary-content">具体内容</text>
+  </view>
+  <!--/剧情简介部分  -->
+
+  <view class="line"></view>
+  <!--影人信息  -->
+  <view class="performer-info">
+    <text>影人</text>
+    <view>
+    </view>
+  </view>
+  <!--影人信息  -->
+</view>
